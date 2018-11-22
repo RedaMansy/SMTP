@@ -2,10 +2,75 @@
 <html lang="en-US">
 <head>
 <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="SMTP.css">
 	<title> TCP/IP </title>
 </head>
-<body>
-	<h1> TCP/IP </h1>
+<div class="topnav">
+	<a href="SMTP.html">SMTP</a>	
+	<a class="active" href="TCP-IP.html">TCP/IP</a>
+	<a href="IMAP.html">IMAP</a>
 
+</div>
+<div class="sidenav">
+  <a class="active" href="#History">History</a>
+</div>
+<body>
+<div class="main">
+	<h1> TCP/IP </h1>
+	<img src="tcpip.png" style="width: 100px; height: 100px">
+		<p> TCP/IP stands for Transmission Control Protocol/Internet Protocol. <br> It is the communication protocol used for the internet and similar networks.<br> Its main function is to control and manage data transmission over the internet. <br> It also provides end to end data communication that specifies how data should be packetized, adressed, transmitted, routed and received. <br> There are four abstraction layers to this functionality. They are: </p>
+		<dl>
+			<dt> <h3> Link Layer </h3> </dt>
+			<dd> Contains methods of communication for data that remains within a single network segment</dd>
+			<dt> <h3> Internet Layer </h3> </dt>
+			<dd> Provides internetworking between independent networks</dd>
+			<dt> <h3> Transport Layer </h3> </dt>
+			<dd> Handles host-to-host communication</dd>
+			<dt> <h3> Application Layer </h3> </dt>
+			<dd> Provides process-to-process data exchange for applications</dd>
+		</dl>
+	<h2> <a name="History"></a> History </h2>
+		<p>TCP/IP was designed in te 1970s DARPA <!---insert link and try to make it like wikipedia where you can hover over it -->scientists, Bob Kahn and Vint Cerf. Due to their design, they've often been refered to as <i>the fathers of the Internet</i>. While working at the IPTO, Kahn realized the need for the development of an open-architecture network model, where any network could communicatew with any other independent of individual hardware and software configuration. He had four goals in mind:</p>
+		<ul>
+			<li> Network Connectivity </li>
+				<ul>
+					<li> A network should be able to connect to another through a gateway </li>
+				</ul>
+			<li> Distribution </li>
+				<ul>
+				<li> There would be no central network </li>
+				</ul>
+			<li> Error Recovery </li>
+				<ul>
+					Lost packets would be transmitted
+				</ul>
+			<li> Black-box Design </li>
+				<ul>
+					No changes would have to be made to a network to connect to another
+				</ul>
+		</ul>
+		<table border="1">
+			<tr>
+				<th> </th>
+				<th> Date of Birth </th>
+				<th> Education </th>
+				<th> Career </th>
+				<th> Achievments </th>
+			</tr>
+			<tr>
+				<th> Bob Kahn </th>
+				<td> June 23, 1943 </td>
+				<td> Studied Electrical Engineering at Princeton </td>
+				<td> Worked at <i>Bell Labs</i><br> Later became an assistant professor at MIT</td>
+				<td rowspan="2" style="font-size: 26px"> <b>INVENTED THE DAMN INTERNET!</b> </td>
+			</tr>
+			<tr>
+				<th> Vint Cerf </th>
+				<td> December 13, 1938 </td>
+				<td> Studied Math and Computer Science at Stanford </td>
+				<td> Worked  at IBM for two years as a systems engineer <br> Earned his PhD in CompSci at UCLA after leaving <i>IBM</i> </td>
+			</tr>
+		</table>
+</div>
 </body>
 </html>

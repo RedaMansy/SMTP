@@ -2,19 +2,28 @@
 <html lang="en-US">
 <head>
 <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="SMTP.css">
 	<title> SMTP </title>
 </head>
 <div class="topnav">
-	<a class="active" href="TCP-IP.html">TCP/IP</a>
-	<a href="#History">History</a>
+	<a class="active" href="SMTP.html">SMTP</a>
+	<a href="TCP-IP.html">TCP/IP</a>
+	<a href="IMAP.html">IMAP</a>
+</div>
+<div class="sidenav">
+  <a class="active" href="#History">History</a>
 </div>
 <body>
+<div class="main">
 	<h1> Secure Mail Transfer Protocol (SMTP) </h1>
 		<p>SMTP is a <a href="TCP-IP.html">TCP/IP</a> protocol used in sending and receiving e-mail. </p>
-		<p> The majority of email systems that send mail over the Internet use SMTP to send messages from a server to another. <br> SMTP, however, is limited in its ability to to queue messages on the recieving end, therefore they are retrieved using POP or IMAP. </p>
+		<p> The majority of email systems that send mail over the Internet use SMTP to send messages from a server to another. <br> SMTP, however, is limited in its ability to to queue messages on the recieving end, therefore they are retrieved using POP or <a href="IMAP.html">IMAP</a></p>
 
-	<h2> History </h2>
+		<a href="https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">
+		<img src="smtpimage.png" alt="SMPT"></a>
+
+	<h2> <a name="History"></a> History </h2>
 		<p> At the time of its defintition by Jonathan Postel in 1892, the internet was minute compared to its vastness today. <br> It was merely a collection of military installations, universities as well as corporate research labs. <br> The number of hosts was so small, that all of the participants could recognize each other. <br> Due to the internet's size, there was further emphasis on reliability rather than security. <br> Users mostly configured their mail servers as open relays which meant that any of them could accept mail meant for other systems and pass it on until it reached its destination.  </p>
-
+</div>
 </body>
 </html>
