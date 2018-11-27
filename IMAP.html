@@ -11,12 +11,84 @@
 
 </div>
 <div class="sidenav">
-  <a class="active" href="#History">History</a>
+  <a href="#History">History</a>
+  <a href="#Advantages and Disadvantages">A&D</a>
+  <a href="#References">Links</a>
 </div>
 <body>
 <div class="main">
 	<h1>IMAP</h1>
+	<style type="text/css">
+		img {
+			border: 1px solid;
+			border-radius: 4px;
+			padding: 5px;
+			width: 150px; 
+		}
+		img:hover {
+			box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+		}
+	</style>
+	<a href="https://en.wikipedia.org/wiki/Mark_Crispin"> <img src="MarkCrispin.jpg"></a>
+	<p> IMAP stands for Internet Message Access Protocol and, as the name implies, it is a protocol used by email clients to <b>retrieve</b> messages from a mail server over a <a href="TCP-IP.html">TCP/IP</a> connection. <br> It was also designed with the aim of allowing management of an email box by email clients. All modern email clients and servers support IMAP.</p>
 
+	<h2> <a name="History"></a> History</h2>
+
+		<p> It was designed by <a href="https://en.wikipedia.org/wiki/Mark_Crispin">Mark Crispin</a> in 1986 as a remote mailbox protocol. There were several versions of IMAP:</p>
+		<ul>
+			<li><h3>Original IMAP</h3></li>
+			<p> This was implemented as a Xerox Lisp machine client and a TOPS-20 server. <br> Lisp machines are general purpose computers that run Lisp as their main software and programming language. <br>They are a good example of a high-level language computer architecture.</p>
+			<li><h3>IMAP2</h3></li>
+			<p> This version introduced the command/response tagging and was the first publicly distributed version. </p>
+			<li><h3>IMAP3</h3></li>
+			<p> Published in 1991, IMAP3 is a rare variant of IMAP and was never accepted by the marketplace. </p>
+			<li><h3>IMAP2bis</h3></li>
+			<p>IMAP2 was extended to now support MIME. MIME is an internet standard that supports other formats such as non-text attachments, text in charaqcter sets other than ASCII and message bodies with several parts. It also added mailbox management funcionality that was absent from IMAP2. </p>
+			<li><h3> IMAP4 </h3></li>
+			<p>IMAP2bis was renamed to IMAP4 by the IMAP Working Group</p>
+		</ul>
+		<style type="text/css">
+			table {
+				border-collapse: collapse;
+				border-width: 2px solid black;
+				width: 70%
+			}
+			th {
+				height: 50px
+			}
+			td {
+				padding: 15px;
+			}
+		</style>
+		<h2> <a name="Advantages and Disadvantages"></a> Advantages and Disadvantages</h2>
+		<table>
+			<tr>
+				<th>Advantages</th>
+				<th>Disadvantages</th>
+			</tr>
+			<tr>
+				<td> Faster response time compared to POP as clients stay connected as long as the UI is active and can download message content on demand, as opposed to being connected to the email server for as long as it takes to download new messages. 
+				</td>
+				<td> Complex to maintain, therefore some hosts do not support it </td>
+			</tr>
+			<tr>
+			<td> Allows simultaneous access by multiple clients and provdes mechanisms for clients to detect changes made to the mailbox by other connected clients. </td>
+			<td> Uses the host's hard drive space </td>	
+			</tr>
+			<tr>
+				<td>
+				Provides mechanisms for a client to ask the server to search for messages. This avoids having the client to download every message in their mailbox in order to perform searches.	
+				</td>
+				<td> Not available offline</td>
+			</tr>
+		</table>
+	<footer>
+		<h2> <a name="References"></a> Links Used</h2>
+		<a href="https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol">Wiki</a>
+		<a href="https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol#History">History</a>
+		<a href="https://www.techwalla.com/articles/the-advantages-disadvantages-of-windows-2000-professional">A&D</a>
+		<a href="https://en.wikipedia.org/wiki/Mark_Crispin">Mark Crispin</a>
+	</footer>
 </div>
 </body>
 </html>

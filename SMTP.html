@@ -13,6 +13,7 @@
 <div class="sidenav">
   <a href="#History">History</a>
   <a href="#Protocol Overview">Protocol Overview</a>
+  <a href="#References">Links</a>
 </div>
 <body>
 <div class="main">
@@ -27,7 +28,26 @@
 		<p> At the time of its defintition by Jonathan Postel in 1892, the internet was minute compared to its vastness today. <br> It was merely a collection of military installations, universities as well as corporate research labs. <br> The number of hosts was so small, that all of the participants could recognize each other. <br> Due to the internet's size, there was further emphasis on reliability rather than security. <br> Users mostly configured their mail servers as open relays which meant that any of them could accept mail meant for other systems and pass it on until it reached its destination.  </p>
 
 	<h2> <a name="Protocol Overview"></a> Protocol Overivew </h2>
-		<p> SMTP is connection oriented and text based, meaning that a communication session needs to be established before any useful data can be transfered and it is in a human readable format that does not contain a gui. The mail sender communicates with a mail receiver through certain commands and through the supply of necesary data over a data stream channel, usually <a href="TCP-IP.html">TCP</a>.</p>
+		<p> SMTP is connection oriented and text based, meaning that a communication session needs to be established before any useful data can be transfered and it is in a human readable format that does not contain a gui. The mail sender communicates with a mail receiver through certain commands and through the supply of necessary data over a data stream channel, usually <a href="TCP-IP.html">TCP</a>. A standard SMTP session consists of commands originated by an SMTP client and the corresponding responses from the SMTP server. An SMTP transaction consists of three command/reply sequences: </p>
+			<dl>
+				<dt><h3> MAIL </h3></dt>
+					<dd> This establishes the return address. </dd>
+				<dt><h3> RCPT </h3></dt>
+					<dd> This establishes a recipient of the message. </dd>
+					<dd> It can be issued multiple times for each recipient. </dd>
+				<dt> <h3> DATA </h3> </dt>
+				<dd> This signals the beginning of the message text. </dd>
+				<dd> It also contains a message header and a message body. </dd>	
+			</dl>
+
+	<h2> SMTP ≠ Mail retrieval </h2>
+		<p> As mentioned previously, SMTP is only a delivery protocol. In order to retrieve messages and manage mail boxes, protocols such as POP and <a href="IMAP.html">IMAP</a> are used. Mail is only pushed to a destination mail server through SMTP. It is then routed based on that destination server and not the individual users it addresses. </p>
+
+	<footer>
+		<h2> <a name="References"></a> Links Used</h2>
+		<a href="https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol#Protocol_overview">Wiki</a>
+		<a href="http://www.circleid.com/posts/history_of_smtp/">History</a>
+	</footer>
 </div>
 </body>
 </html>
